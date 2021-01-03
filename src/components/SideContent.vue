@@ -1,8 +1,8 @@
 <template>
   <div style="width: 35%" class="fixed top-0 right-0 h-screen py-8 px-16 bg-white z-20">
     <div class="flex justify-center font-semibold">
-      <p class="mr-6">Sign In</p>
-      <p>Download</p>
+      <a href="#" class="mr-6 hover:underline">Sign In</a>
+      <a href="#" class="hover:underline">Download</a>
     </div>
 
     <div class="mt-32">
