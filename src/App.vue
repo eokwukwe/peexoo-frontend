@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="font-serif">
-    <navbar msg="Welcome to Your Vue.js App" />
+    <navbar :navbarBgColor="navbarBgColor" :logo="logo" />
     <side-content
       class="transform ease-in-out transition-all duration-300"
       :class="showSideContent ? 'translate-x-0' : 'translate-x-full'"
@@ -37,19 +37,36 @@ export default {
 
   data: () => ({
     showSideContent: true,
+    navbarBgColor: "",
+    logo: 'white',
   }),
 
   mounted: function () {
     this.toggleSideContent();
+    
   },
 
   methods: {
     toggleSideContent() {
-      window.addEventListener("scroll", () =>
-        window.scrollY >= 600
+      window.addEventListener("scroll", () => {
+        window.scrollY >= 580
           ? (this.showSideContent = false)
-          : (this.showSideContent = true)
-      );
+          : (this.showSideContent = true);
+
+        if (window.scrollY <= 630) {
+          this.navbarBgColor = "bg-peeblue text-white";
+          this.logo = 'white'
+        } else if (window.scrollY <= 1660) {
+          this.navbarBgColor = "bg-peeyellow text-gray-500";
+          this.logo = 'black'
+        } else if (window.scrollY <= 4200) {
+          this.navbarBgColor = "bg-peeblue text-white";
+          this.logo = 'white'
+        } else {
+          this.navbarBgColor = "bg-white text-gray-900";
+          this.logo = 'lightBlue'
+        }
+      });
     },
   },
 };
