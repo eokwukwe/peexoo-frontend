@@ -1,7 +1,7 @@
 <template>
   <section class="bg-peeblue">
     <div class="container mx-auto px-32 pt-20 pb-28">
-      <h1 class="text-5xl text-peeblue-100 font-semibold">
+      <h1 class="text-5xl text-peeyellow font-semibold">
         File storage and sharing are <br />
         just the beginning
       </h1>
@@ -16,7 +16,7 @@
                 v-scroll-spy-link
               >
                 <li
-                  class="text-white text-opacity-50 hover:cursor-pointer hover:text-white pl-5 border-l-2 border-transparent border-l-2 border-transparent"
+                  class="text-white text-opacity-50 hover:cursor-pointer hover:text-white pl-5 border-l-2 border-transparent"
                 >
                   <a href="#">
                     <h1 class="font-semibold text-3xl mb-3">Be organized</h1>
@@ -80,7 +80,7 @@
 
       <div class="px-20 flex justify-between items-baseline">
         <div class="flex-1">
-          <h1 class="text-peeblue-100 font-semibold text-5xl">
+          <h1 class="text-peeyellow font-semibold text-5xl">
             Learn more about the benefits <br />
             of Dropbox
           </h1>
@@ -107,7 +107,6 @@ export default {
 <style scoped>
   .customActive {
     border-left: 2.5px solid white;
-    /* padding-left: 1.2rem; */
     transition: all 0.5s;
     color: white;
   }
@@ -126,9 +125,5 @@ export default {
     position: sticky;
     top: 0;
   }
-
-  /* .customActive:hover {
-                                                  color: white;
-                                                } */
 </style>
 

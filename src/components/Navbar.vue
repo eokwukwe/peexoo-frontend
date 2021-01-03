@@ -1,7 +1,7 @@
 <template>
   <div class="fixed z-10 w-full text-white" :class="navbarBgColor">
     <div
-      class="container px-20 mx-auto font-medium flex justify-between items-center py-6 px-2"
+      class="container px-20 mx-auto font-medium flex justify-between items-center py-6"
     >
       <div class="flex justify-around items-center">
         <div v-show="logo === 'white'" class="flex">

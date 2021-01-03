@@ -1,9 +1,9 @@
 <template>
   <section style="height: 90vh" class="bg-peeblue pt-20">
     <div class="container px-32 mx-auto">
-      <p class="text-3xl mt-10 text-peeblue-100 font-semibold">Dropbox</p>
+      <p class="text-3xl mt-10 text-peeyellow font-semibold">Dropbox</p>
 
-      <p class="text-7xl text-peeblue-100 font-bold mt-8">
+      <p class="text-7xl text-peeyellow font-bold mt-8">
         Focus on the <br />
         work that <br />
         matters
